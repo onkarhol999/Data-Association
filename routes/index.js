@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-
+// we want see all post of perticular user
 router.get('/alluserposts', async function(req, res, next) {
   let user = await userModel
   .findOne({_id:"65bcbe639f9ab153fc38cb80"})
